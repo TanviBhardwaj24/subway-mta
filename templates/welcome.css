@@ -1,0 +1,25 @@
+    .ss-header {
+  border-bottom: 3px solid #f2a900;
+  clear: both;
+  color: #002d72;
+  overflow: hidden;
+}
+
+header {
+  display: block;
+}
+
+.example-spacer {
+  flex:1 1 auto;
+}
+
+hr {
+  border: #f2a900;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
