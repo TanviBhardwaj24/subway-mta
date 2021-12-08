@@ -1,0 +1,14 @@
+<h1 style="text-align: center">Uptime</h1>
+
+<div class="mat-card" style="width: auto; margin: 2rem">
+  <form #userlogin = "ngForm" (ngSubmit) = "onSubmit(userlogin.value)" >
+    <input type = "text" name = "lineid" placeholder = "line number" ngModel style="margin-bottom: 2rem">
+    <br/>
+    <input type = "submit" value = "submit">
+  </form>
+</div>
+
+
+<div>Uptime</div>
+<div>{{this.total}} is the total active time of the subway train and since the status is not delayed the uptime is 1</div>
+

@@ -1,0 +1,37 @@
+<mat-toolbar style="min-height:100px">
+  <h2 style="font-weight: 500; ">Server Status</h2>
+  <span class="example-spacer"></span>
+  <div mat-icon-button aria-label="Favorites" style="margin-right: 4.5rem; ">
+    <mat-icon>favorites</mat-icon>
+    <div style="position: absolute; color: #002d72">Favorites</div>
+  </div>
+  <div mat-icon-button aria-label="Subway" style="margin-right: 3.5rem;">
+    <mat-icon> directions_subway</mat-icon>
+    <div style="position: absolute; color: #002d72">Subway</div>
+  </div>
+  <div mat-icon-button aria-label="Bus" style="margin-right: 1.5rem;">
+    <mat-icon> directions_bus</mat-icon>
+    <div style="position: absolute; color: #002d72"> Bus</div>
+  </div>
+  <div mat-icon-button aria-label="Rail" style="margin-right: 1rem;">
+    <mat-icon> directions_railway</mat-icon>
+    <div style="position: absolute; color: #002d72">Rail</div>
+  </div>
+</mat-toolbar>
+
+<hr style="margin-top: 2rem">
+
+<div>
+  <div *ngFor="let route of routes"><b>{{route}}</b> Route ID is experiencing delays</div>
+  <div *ngFor="let line of delayed_lines"><b>{{line}}</b> is experiencing delays</div>
+</div>
+
+<br/>
+
+<div *ngFor="let line of on_time">
+  The lines on time are <b>{{line}}</b>
+</div>
+
+<div *ngFor="let recover of not_delayed">
+  <b>{{recover}} this line has been recovered </b>
+</div>
