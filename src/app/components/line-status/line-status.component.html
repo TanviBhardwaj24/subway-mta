@@ -1,12 +1,8 @@
   <h2 style="text-align: center">Status</h2>
 
     <form #userlogin = "ngForm" (ngSubmit) = "onSubmit(userlogin.value)" class="form" >
-
-      <mat-form-field class="full-width" appearance="fill">
       <input type = "text" name = "lineid" placeholder = "line number" ngModel style="margin-bottom: 0.4rem;">
-      </mat-form-field>
       <button mat-raised-button color="primary" type="submit">Submit</button>
-
     </form>
 
   <div>{{this.status}}</div>
